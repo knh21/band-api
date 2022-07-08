@@ -63,7 +63,7 @@ const bands = {
 
 
 app.get('/', (request, response ) => {
-    response.sendFile(__dirname + '/client-side-code/index.html')
+    response.sendFile(__dirname + '/index.html')
 })
 
 

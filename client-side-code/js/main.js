@@ -1,9 +1,9 @@
 document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest(){
-    const rapperName = document.querySelector('input').value
+    const bandName = document.querySelector('input').value
     try{
-        const response = await fetch(`https://poppunk-bands-api.herokuapp.com/api/${name}`)
+        const response = await fetch(` https://poppunk-bands-api.herokuapp.com/api/${bandName}`)
         const data = await response.json()
 
         console.log(data)
